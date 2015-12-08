@@ -1,14 +1,32 @@
 <head>
-  <title>bkwebsite</title>
+  <title>Bill Kilmer</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
+<body>
+  <h1>Bill Kilmer</h1>
+  <p class="subtitle">Web Developer</p>
+  {{> projects}}
+  
+  <!-- {{> hello}} -->
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="projects">
+  
+  <div class="thumbnail jabbr">
+    <p class="overlay">Jabbr</p>
+    <img src="jabbr.png" alt="Jabbr" style="visibility:hidden"/>
+  </div>
+
+  <div class="thumbnail hackfeed">
+    <p class="overlay">Hackfeed</p>
+    <img src="hackfeed.png" alt="Hackfeed" style="visibility:hidden"/>
+  </div>
+
+  <div class="thumbnail zvsv">
+    <p class="overlay">Zombies vs. Vampires</p>
+    <img src="zvsv.png" alt="Zombies vs. Vampires" style="visibility:hidden"/>
+  </div>
+
 </template>

@@ -1,1 +1,58 @@
 /* CSS declarations go here */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: 'Montserrat', serif;
+}
+
+.subtitle {
+  color: gray;
+  font-size: 10px;
+}
+
+.jabbr {
+  background: url(/jabbr.png);
+}
+
+.hackfeed {
+  background: url(/hackfeed.png);
+}
+
+.zvsv {
+  background: url(/zvsv.png);
+}
+
+.thumbnail {
+  position: relative;
+  vertical-align:middle;
+  width: 49%;
+  float:right;
+  background-size: contain;
+  color: rgba(0, 0, 0, 0);
+}
+
+.thumbnail p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.2em;
+ }
+
+
+.thumbnail:hover {
+  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+img {
+  width: 100%;
+}

@@ -1,6 +1,7 @@
 <head>
   <title>Bill Kilmer</title>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Yantramanav:400,300,500' rel='stylesheet' type='text/css'>
 </head>
 
 
@@ -19,7 +20,7 @@
   <a href="/jabbr">
     <div class="thumbnail jabbr">
       <p class="overlay">Jabbr</p>
-      <img class="thumb" src="jabbr.png" alt="Jabbr" style="visibility:hidden"/>
+      <img class="thumb" src="jabbr2.png" alt="Jabbr" style="visibility:hidden"/>
     </div>
   </a>
 
@@ -40,7 +41,29 @@
 </template>
 
 <template name="jabbr">
-  <h1>jabbr</h1>
+  <div class="container">
+    <h1>jabbr</h1>
+    <p>Deployed at <a href="http://www.jabbr.me/">jabbr.me</a></p>
+    <p>
+      Collaborators: 
+      <a href="https://github.com/vaticancameo">Angela Wang</a>, 
+      <a href="https://github.com/SteelBurgher">Brandon Ellis</a>, 
+      <a href="https://github.com/meisterpeeps">Jeff Peoples</a></p>
+    
+    <p>Description:</p>
+    <p>Jabbr is a social language learning app that allows people to connect and teach each other languages through video and text chat. Users can record the audio from their chat sessions and play it back using our audio player. The player allows users to annotate chunks of the audio with comments to enhance the language learning experience.</p>
+    <p>I implemented the front and back end of recording views with Mongo, Node, Express, and Angular. I created the data model for the user recordings' audio annotation system.</p>
+
+    <p>Techs Used:</p>
+    <p>Mongo, Express, Angular, Node, Web Audio API, Socket.IO, WebRTC, Bootstrap, Digital Ocean</p>
+
+    <p>Screenshots:</p>
+    <div class="screenshots">
+      <img src="jabbr1.png">
+      <img src="jabbr2.png">
+      <img src="jabbr3.png">
+    </div>
+  </div>
 </template>
 
 <template name="hackfeed">
@@ -52,10 +75,11 @@
 </template>
 
 <template name="menu">
-  <a href="https://github.com/wdk122"><h1>github</h1></a>
-  <a href="/William Kilmer.pdf"><h1>resume</h1></a>
-  <a href="https://www.linkedin.com/in/williamkilmer"><h1>linkedin</h1></a>
-  <a href="/about"><h1>about me</h1></a>
+  <h1><a href="/blog">blog</a></h1>
+  <h1><a href="https://github.com/wdk122">github</a></h1>
+  <h1><a href="/William Kilmer.pdf">resume</a></h1>
+  <h1><a href="https://www.linkedin.com/in/williamkilmer">linkedin</a></h1>
+  <h1><a href="/about">about me</a></h1>
 </template>
 
 <template name="about">

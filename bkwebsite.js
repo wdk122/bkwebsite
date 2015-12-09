@@ -11,6 +11,7 @@ if (Meteor.isClient) {
   Router.route('/zvsv');
   Router.route('/menu');
   Router.route('/about');
+  Router.route('/blog');
 
   // counter starts at 0
   Session.setDefault('counter', 0);

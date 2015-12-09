@@ -11,6 +11,15 @@ html {
   font-family: 'Montserrat', serif;
 }
 
+p, p a {
+  font-family: 'Yantramanav', sans-serif;
+}
+
+/* selects a's within p's */
+p a {
+
+}
+
 .heading {
   float: left;
 }
@@ -19,12 +28,17 @@ header {
   height: 120px;
 }
 
-h1, a {
+h1 a {
   color: #000;
   text-decoration: none;
 }
 
 h1:hover {
+  color: #000;
+  text-decoration: none;  
+}
+
+h1 a :hover {
   color: #000;
   text-decoration: none;
 }
@@ -47,7 +61,7 @@ a:hover {
 }
 
 .jabbr {
-  background: url(/jabbr.png);
+  background: url(/jabbr2.png);
 }
 
 .hackfeed {
@@ -87,3 +101,20 @@ a:hover {
 img.thumb {
   width: 100%;
 }
+
+.screenshots > img{
+/*  
+  margin: 2em;
+  */
+  width: 100%;
+}
+
+.container {
+  /* top | horizontal | bottom */
+  margin: 1em 3em 2em; 
+}
+
+
+
+
+

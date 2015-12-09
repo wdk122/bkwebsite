@@ -52,10 +52,10 @@
     
     <p>Description:</p>
     <p>Jabbr is a social language learning app that allows people to connect and teach each other languages through video and text chat. Users can record the audio from their chat sessions and play it back using our audio player. The player allows users to annotate chunks of the audio with comments to enhance the language learning experience.</p>
-    <p>I implemented the front and back end of recording views with Mongo, Node, Express, and Angular. I created the data model for the user recordings' audio annotation system.</p>
+    <p>I implemented the front and back end of recording views with MongoDB, Node, Express, and Angular. I created the data model for the user recordings' audio annotation system.</p>
 
     <p>Techs Used:</p>
-    <p>Mongo, Express, Angular, Node, Web Audio API, Socket.IO, WebRTC, Bootstrap, Digital Ocean</p>
+    <p>MongoDB, Express, Angular, Node, Web Audio API, Socket.IO, WebRTC, Bootstrap, Digital Ocean</p>
 
     <p>Screenshots:</p>
     <div class="screenshots">
@@ -67,11 +67,51 @@
 </template>
 
 <template name="hackfeed">
-  <h1>hackfeed</h1>
+  <div class="container">
+    <h1>hackfeed</h1>
+    <p>Deployed at <a href="http://hackfeed.herokuapp.com/#/">hackfeed.herokuapp.com</a></p>
+    <p>
+      Collaborators: 
+      <a href="https://github.com/vaticancameo">Angela Wang</a>, 
+      <a href="https://github.com/CHBDev">Cooper Buckingham</a>,
+      <a href="https://github.com/vincentnocera">Vincent Nocera</a>, 
+      <a href="https://github.com/lepond">Lindsay Pond</a></p>
+    
+    <p>Description:</p>
+    <p>Hackfeed is a fresh take on the Hacker News UI. It lets users follow post from specific users and posts that mention desired keywords.</p>
+    <p>I acted as scrum master, directing traffic in daily standup meetings and tracking issues on our kanban board. I deployed the site to Heroku and set up the production database using MongoLab.</p>
+
+    <p>Techs Used:</p>
+    <p>MongoDB, Express, Angular, Node, Heroku, MongoLab, Hacker News API</p>
+
+    <div class="screenshots">
+      <img src="hackfeed.png">
+    </div>
+  </div>
 </template>
 
 <template name="zvsv">
-  <h1>zvsv</h1>
+  <div class="container">
+    <h1>Zombies vs. Vampires</h1>
+    <p>Deployed at <a href="http://zvsv.herokuapp.com/#/">zvsv.meteor.com</a></p>
+    <p>
+      Collaborators: 
+      <a href="https://github.com/vaticancameo">Angela Wang</a>, 
+      <a href="https://github.com/CHBDev">Cooper Buckingham</a>,
+      <a href="https://github.com/vincentnocera">Vincent Nocera</a>, 
+      <a href="https://github.com/lepond">Lindsay Pond</a></p>
+    
+    <p>Description:</p>
+    <p>Zombies vs. Vampires is a bus stop tagging game where players can "bite" people to infect bus stops, and earn points for themselves and their teams.</p>
+    <p>I integrated the Firebase Geofire npm module with Meteor to query real time bus locations. I set up MongoDB collections to keep track of players, teams, and scores. I acted as scrum master, directing traffic in daily standup meetings and tracking issues on our kanban board.</p>
+
+    <p>Techs Used:</p>
+    <p>Meteor, MongoDB, Firebase, Google Maps API</p>
+
+    <div class="screenshots">
+      <img src="zvsv.png">
+    </div>
+  </div>
 </template>
 
 <template name="menu">
@@ -83,6 +123,7 @@
 </template>
 
 <template name="about">
+  <!-- TODO: make this a two col view with my face on one side-->
   <h1>about me</h1>
   <p>I'm excited about the future of the web as an open platform that can be a vital complement to the mobile app ecosystem. Let's build the future together!</p>
   <p>I'm experienced in building projects using the MEAN stack and Meteor.js, and am quick at learning new platforms. I also have experience working with D3, SQL, Backbone, and React. I'm well versed in agile and pair programming.</p>

@@ -11,9 +11,39 @@ html {
   font-family: 'Montserrat', serif;
 }
 
+.heading {
+  float: left;
+}
+
+header {
+  height: 120px;
+}
+
+h1, a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
 .subtitle {
   color: gray;
   font-size: 10px;
+}
+
+.hamburger {
+  margin-right: 1em;
+  float: right;
+  position: relative;
+  width: 32px;
 }
 
 .jabbr {
@@ -30,9 +60,10 @@ html {
 
 .thumbnail {
   position: relative;
+  margin: 2em;
   vertical-align:middle;
-  width: 49%;
-  float:right;
+  width: 42%;
+  float:left;
   background-size: contain;
   color: rgba(0, 0, 0, 0);
 }
@@ -53,6 +84,6 @@ html {
   color: rgba(0, 0, 0, 0.9);
 }
 
-img {
+img.thumb {
   width: 100%;
 }

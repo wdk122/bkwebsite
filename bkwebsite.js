@@ -1,6 +1,17 @@
 Projects = new Mongo.Collection("projects");
 
 if (Meteor.isClient) {
+  
+  Router.route('/', function () {
+    this.render('projects');
+  });
+
+  Router.route('/jabbr');
+  Router.route('/hackfeed');
+  Router.route('/zvsv');
+  Router.route('/menu');
+  Router.route('/about');
+
   // counter starts at 0
   Session.setDefault('counter', 0);
 

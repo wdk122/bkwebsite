@@ -5,28 +5,61 @@
 
 
 <body>
-  <h1>Bill Kilmer</h1>
-  <p class="subtitle">Web Developer</p>
-  {{> projects}}
-  
-  <!-- {{> hello}} -->
+  <header>
+    <div class="heading">
+      <h1><a href="/">Bill Kilmer</a></h1>
+      <p class="subtitle">Web Developer</p>  
+    </div>
+    <a href="/menu"><img class="hamburger" src="hamburger.png"/></a>
+  </header>
 </body>
 
 <template name="projects">
   
-  <div class="thumbnail jabbr">
-    <p class="overlay">Jabbr</p>
-    <img src="jabbr.png" alt="Jabbr" style="visibility:hidden"/>
-  </div>
+  <a href="/jabbr">
+    <div class="thumbnail jabbr">
+      <p class="overlay">Jabbr</p>
+      <img class="thumb" src="jabbr.png" alt="Jabbr" style="visibility:hidden"/>
+    </div>
+  </a>
 
-  <div class="thumbnail hackfeed">
-    <p class="overlay">Hackfeed</p>
-    <img src="hackfeed.png" alt="Hackfeed" style="visibility:hidden"/>
-  </div>
+  <a href="/hackfeed">
+    <div class="thumbnail hackfeed">
+      <p class="overlay">Hackfeed</p>
+      <img class="thumb" src="hackfeed.png" alt="Hackfeed" style="visibility:hidden"/>
+    </div>
+  </a>
 
-  <div class="thumbnail zvsv">
-    <p class="overlay">Zombies vs. Vampires</p>
-    <img src="zvsv.png" alt="Zombies vs. Vampires" style="visibility:hidden"/>
-  </div>
+  <a href="/zvsv">
+    <div class="thumbnail zvsv">
+      <p class="overlay">Zombies vs. Vampires</p>
+      <img class="thumb" src="zvsv.png" alt="Zombies vs. Vampires" style="visibility:hidden"/>
+    </div>
+  </a>
 
+</template>
+
+<template name="jabbr">
+  <h1>jabbr</h1>
+</template>
+
+<template name="hackfeed">
+  <h1>hackfeed</h1>
+</template>
+
+<template name="zvsv">
+  <h1>zvsv</h1>
+</template>
+
+<template name="menu">
+  <a href="https://github.com/wdk122"><h1>github</h1></a>
+  <a href="/William Kilmer.pdf"><h1>resume</h1></a>
+  <a href="https://www.linkedin.com/in/williamkilmer"><h1>linkedin</h1></a>
+  <a href="/about"><h1>about me</h1></a>
+</template>
+
+<template name="about">
+  <h1>about me</h1>
+  <p>I'm excited about the future of the web as an open platform that can be a vital complement to the mobile app ecosystem. Let's build the future together!</p>
+  <p>I'm experienced in building projects using the MEAN stack and Meteor.js, and am quick at learning new platforms. I also have experience working with D3, SQL, Backbone, and React. I'm well versed in agile and pair programming.</p>
 </template>

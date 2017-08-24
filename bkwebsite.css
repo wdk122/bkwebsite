@@ -21,11 +21,34 @@ p a {
 }
 
 .heading {
+  /*margin: 22px 0;*/
   float: left;
+}
+
+/*body > header > div.heading > h1 {
+  margin: 0;
+}*/
+
+.menulinks {
+  position: relative;
+  top: 33%;
+  transform: translateY(-50%);
+  float: right;
+}
+
+.menulinks a {
+  color: rgba(32, 32, 32, 0.79);
+  text-decoration: none;
+  font-size: 110%;
+}
+
+.menu {
+
 }
 
 header {
   height: 120px;
+  position: relative;
 }
 
 h1 a {
@@ -53,12 +76,12 @@ a:hover {
   font-size: 10px;
 }
 
-.hamburger {
+/*.hamburger {
   margin-right: 1em;
   float: right;
   position: relative;
   width: 32px;
-}
+}*/
 
 .jabbr {
   background: url(/jabbr2.png);
@@ -75,7 +98,7 @@ a:hover {
 .thumbnail {
   position: relative;
   margin: 2em;
-  vertical-align:middle;
+  vertical-align: middle;
   width: 42%;
   float:left;
   background-size: contain;
